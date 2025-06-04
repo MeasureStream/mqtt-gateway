@@ -58,7 +58,7 @@ def on_message(client, userdata, msg):
 
 def send_periodic_data(client):
     while True:
-        for topic in UPLINK_TOPICS:
+        for topic in ["uplink/gateway"]:#UPLINK_TOPICS:
             client.publish(topic, gateway_payload)
             print(f"[Periodico] Inviato a {topic}: {gateway_payload}")
         time.sleep(PERIODIC_INTERVAL)
