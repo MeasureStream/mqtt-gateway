@@ -17,7 +17,7 @@ PERIODIC_INTERVAL = 60
 
 gateway_payload = json.dumps({
     "id": 1,
-    "cus": list(1,2,3,4,5,6,7,8,9,10, 50,51,52,53)  # i set in Python non sono serializzabili direttamente
+    "cus": [1,2,3,4,5,6,7,8,9,10, 50,51,52,53]  # i set in Python non sono serializzabili direttamente
 })
 
 
